@@ -15,7 +15,6 @@
     "slug": "athousandquestions.com",
     "description": "An interactive web application providing icebreaker-style questions for conversations, team-building, and social gatherings. Features category filtering, social sharing, and a clean, lightweight interface.",
     "siteUrl": "http://athousandquestions.com",
-    "githubUrl": "https://github.com/michaeljthacker/athousandquestions",
     "screenshot": "a-thousand-questions.png",
     "established": "January 2024",
     "tags": ["webapp", "content-generator", "html-css-js", "static-site", "production", "react"]
@@ -47,7 +46,6 @@
     "slug": "garden.mjt.pub",
     "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
     "siteUrl": "http://garden.mjt.pub",
-    "githubUrl": "https://github.com/michaeljthacker/theos-urban-garden",
     "screenshot": "garden-tycoon.png",
     "established": "July 2025",
     "tags": ["game", "html-css-js", "static-site", "prototype"]
@@ -58,7 +56,6 @@
     "slug": "storytime.mjt.pub",
     "description": "A fully automated, month-long bedtime story generator and publisher. Each day, a new ~20-minute chapter is generated using the OpenAI API, posted to a static site hosted via GitHub Pages, and archived every 30 days with brand-new concepts, characters, and plots.",
     "siteUrl": "http://storytime.mjt.pub",
-    "githubUrl": "https://github.com/michaeljthacker/nightly-story",
     "screenshot": "storytime.png",
     "established": "August 2025",
     "tags": ["content-generator", "python", "static-site", "production"]
@@ -88,7 +85,7 @@
     "id": "the-last-pupper",
     "name": "The Last Pupper",
     "slug": "thelastpupper.com",
-    "description": "A simple site hosting a 'Last Supper' image with dogs. Not my artwork, just a domain I couldn't resist buying. Pastor approved.",
+    "description": "A simple site hosting a 'Last Pupper' image (dogs at the last supper). Not my artwork, just a domain I couldn't resist buying. Pastor approved.",
     "siteUrl": "http://thelastpupper.com",
     "screenshot": "the-last-pupper.png",
     "established": "April 2020",
