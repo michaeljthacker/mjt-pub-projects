@@ -123,6 +123,7 @@
     "slug": "NotableJoy.com",
     "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
     "siteUrl": "http://notablejoy.com",
+    "screenshot": "notable-joy.png",
     "established": "2020",
     "tags": ["playground"]
   },
