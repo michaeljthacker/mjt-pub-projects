@@ -1,5 +1,15 @@
 [
   {
+    "id": "api-backend",
+    "name": "mjt.pub API Backend",
+    "slug": "api.mjt.pub",
+    "description": "A modular Django + DRF backend used by multiple personal projects. A shared tool-belt that can power many apps without data collisions, providing RESTful APIs for authentication, data storage, and business logic.",
+    "siteUrl": "http://api.mjt.pub/docs",
+    "screenshot": "api-backend.png",
+    "established": "May 2025",
+    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
+  },
+  {
     "id": "a-thousand-questions",
     "name": "A Thousand Questions",
     "slug": "athousandquestions.com",
@@ -9,6 +19,38 @@
     "screenshot": "a-thousand-questions.png",
     "established": "January 2024",
     "tags": ["webapp", "content-generator", "html-css-js", "static-site", "production", "react"]
+  },
+  {
+    "id": "homecare",
+    "name": "Home Care Tracker",
+    "slug": "homecare.mjt.pub",
+    "description": "A focused, lightweight webapp for generating and tracking a personalized home maintenance schedule. Helps homeowners stay on top of routine tasks and preventive maintenance.",
+    "siteUrl": "http://homecare.mjt.pub",
+    "screenshot": "homecare.png",
+    "established": "August 2025",
+    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
+  },
+  {
+    "id": "colors",
+    "name": "Color Web App",
+    "slug": "colors.mjt.pub",
+    "description": "A responsive generative art web application that creates color-themed designs using extracted color palettes. Explore beautiful color combinations and generative patterns.",
+    "siteUrl": "http://colors.mjt.pub",
+    "githubUrl": "https://www.github.com/michaeljthacker/ColorWebApp",
+    "screenshot": "colors.png",
+    "established": "October 2025",
+    "tags": ["webapp", "static-site", "html-css-js", "playground"]
+  },
+  {
+    "id": "garden-tycoon",
+    "name": "Theo's Urban Garden",
+    "slug": "garden.mjt.pub",
+    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
+    "siteUrl": "http://garden.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/theos-urban-garden",
+    "screenshot": "garden-tycoon.png",
+    "established": "July 2025",
+    "tags": ["game", "html-css-js", "static-site", "prototype"]
   },
   {
     "id": "storytime",
@@ -33,57 +75,14 @@
     "tags": ["game", "html-css-js", "static-site", "prototype"]
   },
   {
-    "id": "garden-tycoon",
-    "name": "Theo's Urban Garden",
-    "slug": "garden.mjt.pub",
-    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
-    "siteUrl": "http://garden.mjt.pub",
-    "githubUrl": "https://github.com/michaeljthacker/theos-urban-garden",
-    "screenshot": "garden-tycoon.png",
-    "established": "July 2025",
-    "tags": ["game", "html-css-js", "static-site", "prototype"]
-  },
-  {
-    "id": "snake",
-    "name": "Snake to Learn",
-    "slug": "snake.mjt.pub",
-    "description": "A classic Snake game implementation built from scratch using vanilla JavaScript, HTML, and CSS. Demonstrates fundamental web development concepts when learning the basics. Not from template or class project.",
-    "siteUrl": "http://snake.mjt.pub",
-    "githubUrl": "https://github.com/michaeljthacker/SnakeToLearn",
-    "screenshot": "snake.png",
-    "established": "March 2020",
-    "tags": ["game", "html-css-js", "static-site", "playground"]
-  },
-  {
-    "id": "homecare",
-    "name": "Home Care Tracker",
-    "slug": "homecare.mjt.pub",
-    "description": "A focused, lightweight webapp for generating and tracking a personalized home maintenance schedule. Helps homeowners stay on top of routine tasks and preventive maintenance.",
-    "siteUrl": "http://homecare.mjt.pub",
-    "screenshot": "homecare.png",
-    "established": "August 2025",
-    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
-  },
-  {
-    "id": "api-backend",
-    "name": "mjt.pub API Backend",
-    "slug": "api.mjt.pub",
-    "description": "A modular Django + DRF backend used by multiple personal projects. A shared tool-belt that can power many apps without data collisions, providing RESTful APIs for authentication, data storage, and business logic.",
-    "siteUrl": "http://api.mjt.pub/docs",
-    "screenshot": "api-backend.png",
-    "established": "May 2025",
-    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
-  },
-  {
-    "id": "colors",
-    "name": "Color Web App",
-    "slug": "colors.mjt.pub",
-    "description": "A responsive generative art web application that creates color-themed designs using extracted color palettes. Explore beautiful color combinations and generative patterns.",
-    "siteUrl": "http://colors.mjt.pub",
-    "githubUrl": "https://www.github.com/michaeljthacker/ColorWebApp",
-    "screenshot": "colors.png",
-    "established": "October 2025",
-    "tags": ["webapp", "static-site", "html-css-js", "playground"]
+    "id": "notable-joy",
+    "name": "Notable Joy",
+    "slug": "NotableJoy.com",
+    "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
+    "siteUrl": "http://notablejoy.com",
+    "screenshot": "notable-joy.png",
+    "established": "2020",
+    "tags": ["playground"]
   },
   {
     "id": "the-last-pupper",
@@ -107,6 +106,17 @@
     "tags": ["game", "html-css-js", "static-site", "playground"]
   },
   {
+    "id": "snake",
+    "name": "Snake to Learn",
+    "slug": "snake.mjt.pub",
+    "description": "A classic Snake game implementation built from scratch using vanilla JavaScript, HTML, and CSS. Demonstrates fundamental web development concepts when learning the basics. Not from template or class project.",
+    "siteUrl": "http://snake.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/SnakeToLearn",
+    "screenshot": "snake.png",
+    "established": "March 2020",
+    "tags": ["game", "html-css-js", "static-site", "playground"]
+  },
+  {
     "id": "chrome-bible-speak",
     "name": "Bible Speak Chrome Extension",
     "slug": "chrome-bible-speak",
@@ -116,16 +126,6 @@
     "screenshot": "chrome-bible-speak.png",
     "established": "January 2025",
     "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
-  },
-  {
-    "id": "notable-joy",
-    "name": "Notable Joy",
-    "slug": "NotableJoy.com",
-    "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
-    "siteUrl": "http://notablejoy.com",
-    "screenshot": "notable-joy.png",
-    "established": "2020",
-    "tags": ["playground"]
   },
   {
     "id": "pdf-merger",
