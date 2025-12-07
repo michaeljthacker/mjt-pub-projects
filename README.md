@@ -301,6 +301,7 @@ Use these (or a subset) for consistency:
 * `drf`
 * `tkinter`
 * `chrome-api`
+* `react`
 
 **By deployment / architecture:**
 
@@ -390,3 +391,104 @@ Example tag sets:
    ```
 
 The new project will appear automatically with filters and search support.
+
+---
+
+## Development
+
+**Local Testing:**
+
+The site uses client-side JavaScript to load `projects.json`, which requires running a local web server (the browser's `file://` protocol blocks fetch requests).
+
+**Option 1: Python HTTP Server**
+
+```powershell
+# Navigate to project directory
+cd c:\Users\Micha\DevSpace\Projects\mjt-pub-projects
+
+# Start server on port 8000
+python -m http.server 8000
+
+# Open browser to http://localhost:8000
+```
+
+**Option 2: Python HTTP Server with Network Access**
+
+To test on mobile devices on your local network:
+
+```powershell
+# Start server bound to all network interfaces
+python -m http.server 8000 --bind 0.0.0.0
+
+# Find your local IP address
+ipconfig | Select-String "IPv4"
+
+# Access from mobile: http://YOUR_IP:8000 (e.g., http://10.0.0.201:8000)
+```
+
+**Testing Checklist:**
+- Tab switching works without page reload
+- All project cards render correctly
+- Tag filtering updates cards instantly
+- Search input filters by name/description
+- Card overlay shows on hover (desktop) or first tap (mobile)
+- Second tap navigates to project site (mobile)
+- All links open correctly (profile cards, footer email, project buttons)
+- No console errors
+
+---
+
+## Deployment
+
+**Workflow:**
+
+1. **Develop on feature branch:**
+   ```bash
+   git checkout -b feat/my-feature
+   # ... make changes ...
+   git add -A
+   git commit -m "Description of changes"
+   git push origin feat/my-feature
+   ```
+
+2. **Merge to main (via Pull Request):**
+   - Create PR: `feat/my-feature` → `main`
+   - Review changes in GitHub UI
+   - Merge PR
+   - Pull latest main locally: `git checkout main && git pull`
+
+3. **Deploy to production (via Pull Request):**
+   - Create PR: `main` → `prod`
+   - Review changes in GitHub UI
+   - Merge PR
+   - Pull latest prod locally: `git checkout prod && git pull`
+
+**GitHub Pages Configuration:**
+- **Branch:** `prod`
+- **Folder:** `/` (root)
+- **Custom domain:** `projects.mjt.pub`
+- **CNAME file:** Located in repo root with content `projects.mjt.pub`
+
+**Deployment Checklist:**
+- [ ] All changes tested locally
+- [ ] No console errors
+- [ ] All links verified (no 404s)
+- [ ] Mobile testing complete
+- [ ] Changes committed to `main`
+- [ ] `main` merged to `prod`
+- [ ] Pushed to GitHub
+- [ ] Wait 2-5 minutes for GitHub Pages rebuild
+- [ ] Verify live site at `projects.mjt.pub`
+- [ ] Test on production (incognito mode to avoid cache)
+
+**Rollback Procedure:**
+
+If a critical bug is found after deployment:
+
+```bash
+git checkout prod
+git revert HEAD  # or git reset --hard <previous-commit>
+git push origin prod --force  # use carefully
+```
+
+GitHub Pages will automatically redeploy the previous version.

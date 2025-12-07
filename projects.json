@@ -1,0 +1,141 @@
+[
+  {
+    "id": "api-backend",
+    "name": "mjt.pub API Backend",
+    "slug": "api.mjt.pub",
+    "description": "A modular Django + DRF backend used by multiple personal projects. A shared tool-belt that can power many apps without data collisions, providing RESTful APIs for authentication, data storage, and business logic.",
+    "siteUrl": "http://api.mjt.pub/docs",
+    "screenshot": "api-backend.png",
+    "established": "May 2025",
+    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
+  },
+  {
+    "id": "a-thousand-questions",
+    "name": "A Thousand Questions",
+    "slug": "athousandquestions.com",
+    "description": "An interactive web application providing icebreaker-style questions for conversations, team-building, and social gatherings. Features category filtering, social sharing, and a clean, lightweight interface.",
+    "siteUrl": "http://athousandquestions.com",
+    "githubUrl": "https://github.com/michaeljthacker/athousandquestions",
+    "screenshot": "a-thousand-questions.png",
+    "established": "January 2024",
+    "tags": ["webapp", "content-generator", "html-css-js", "static-site", "production", "react"]
+  },
+  {
+    "id": "homecare",
+    "name": "Home Care Tracker",
+    "slug": "homecare.mjt.pub",
+    "description": "A focused, lightweight webapp for generating and tracking a personalized home maintenance schedule. Helps homeowners stay on top of routine tasks and preventive maintenance.",
+    "siteUrl": "http://homecare.mjt.pub",
+    "screenshot": "homecare.png",
+    "established": "August 2025",
+    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
+  },
+  {
+    "id": "colors",
+    "name": "Color Web App",
+    "slug": "colors.mjt.pub",
+    "description": "A responsive generative art web application that creates color-themed designs using extracted color palettes. Explore beautiful color combinations and generative patterns.",
+    "siteUrl": "http://colors.mjt.pub",
+    "githubUrl": "https://www.github.com/michaeljthacker/ColorWebApp",
+    "screenshot": "colors.png",
+    "established": "October 2025",
+    "tags": ["webapp", "static-site", "html-css-js", "playground"]
+  },
+  {
+    "id": "garden-tycoon",
+    "name": "Theo's Urban Garden",
+    "slug": "garden.mjt.pub",
+    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
+    "siteUrl": "http://garden.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/theos-urban-garden",
+    "screenshot": "garden-tycoon.png",
+    "established": "July 2025",
+    "tags": ["game", "html-css-js", "static-site", "prototype"]
+  },
+  {
+    "id": "storytime",
+    "name": "Monthly Bedtime Serial",
+    "slug": "storytime.mjt.pub",
+    "description": "A fully automated, month-long bedtime story generator and publisher. Each day, a new ~20-minute chapter is generated using the OpenAI API, posted to a static site hosted via GitHub Pages, and archived every 30 days with brand-new concepts, characters, and plots.",
+    "siteUrl": "http://storytime.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/nightly-story",
+    "screenshot": "storytime.png",
+    "established": "August 2025",
+    "tags": ["content-generator", "python", "static-site", "production"]
+  },
+  {
+    "id": "soccer-positioning",
+    "name": "Soccer Positioning Game",
+    "slug": "soccer.mjt.pub",
+    "description": "A simple 2D soccer positioning game where players select a role, position themselves on the field, and receive a score based on their positioning. Not built by a soccer pro.",
+    "siteUrl": "http://soccer.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/soccer-position-game",
+    "screenshot": "soccer-positioning.png",
+    "established": "October 2024",
+    "tags": ["game", "html-css-js", "static-site", "prototype"]
+  },
+  {
+    "id": "notable-joy",
+    "name": "Notable Joy",
+    "slug": "NotableJoy.com",
+    "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
+    "siteUrl": "http://notablejoy.com",
+    "screenshot": "notable-joy.png",
+    "established": "2020",
+    "tags": ["playground"]
+  },
+  {
+    "id": "the-last-pupper",
+    "name": "The Last Pupper",
+    "slug": "thelastpupper.com",
+    "description": "A simple site hosting a 'Last Supper' image with dogs. Not my artwork, just a domain I couldn't resist buying. Pastor approved.",
+    "siteUrl": "http://thelastpupper.com",
+    "screenshot": "the-last-pupper.png",
+    "established": "April 2020",
+    "tags": ["webapp", "static-site", "playground"]
+  },
+  {
+    "id": "playful-button",
+    "name": "Playful Button",
+    "slug": "PlayfulButton.com",
+    "description": "A simple web-based game where users click a playful, moving button to increase their score. Includes difficulty levels, lives, and a playful UI. My first ever coding-assistant project experiment.",
+    "siteUrl": "http://playfulbutton.com",
+    "githubUrl": "https://github.com/michaeljthacker/playful-button",
+    "screenshot": "playful-button.png",
+    "established": "December 2024",
+    "tags": ["game", "html-css-js", "static-site", "playground"]
+  },
+  {
+    "id": "snake",
+    "name": "Snake to Learn",
+    "slug": "snake.mjt.pub",
+    "description": "A classic Snake game implementation built from scratch using vanilla JavaScript, HTML, and CSS. Demonstrates fundamental web development concepts when learning the basics. Not from template or class project.",
+    "siteUrl": "http://snake.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/SnakeToLearn",
+    "screenshot": "snake.png",
+    "established": "March 2020",
+    "tags": ["game", "html-css-js", "static-site", "playground"]
+  },
+  {
+    "id": "chrome-bible-speak",
+    "name": "Bible Speak Chrome Extension",
+    "slug": "chrome-bible-speak",
+    "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
+    "siteUrl": "https://github.com/michaeljthacker/chrome-bible-speak",
+    "githubUrl": "https://github.com/michaeljthacker/chrome-bible-speak",
+    "screenshot": "chrome-bible-speak.png",
+    "established": "January 2025",
+    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
+  },
+  {
+    "id": "pdf-merger",
+    "name": "PDF Merger",
+    "slug": "pdf-merger",
+    "description": "A simple drag-and-click desktop application for merging PDF files, built with Python and Tkinter. Provides an easy-to-use GUI for combining multiple PDFs into a single document.",
+    "siteUrl": "https://github.com/michaeljthacker/pdf-merger-gui",
+    "githubUrl": "https://github.com/michaeljthacker/pdf-merger-gui",
+    "screenshot": "pdf-merger.png",
+    "established": "April 2025",
+    "tags": ["desktop-app", "tool", "python", "tkinter", "prototype"]
+  }
+]
