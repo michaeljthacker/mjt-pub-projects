@@ -36,7 +36,7 @@
     "id": "garden-tycoon",
     "name": "Theo's Urban Garden",
     "slug": "garden.mjt.pub",
-    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
+    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
     "siteUrl": "http://garden.mjt.pub",
     "githubUrl": "https://github.com/michaeljthacker/theos-urban-garden",
     "screenshot": "garden-tycoon.png",
