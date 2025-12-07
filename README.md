@@ -1,9 +1,3 @@
-Here we go — incorporating the est-date, About tab, standardized screenshots, global BMC link, filters/search, and the overall look/feel you described.
-
-You can pretty much drop this in as `README.md` for the new repo.
-
----
-
 # mjt Projects Gallery
 
 A simple, lightweight gallery showcasing sites and apps built by **Mike Thacker**. Projects range from early experiments and random prototypes to simple production webapps and full-stack applications.
