@@ -3,6 +3,8 @@
 // ===========================
 let allProjects = [];
 let activeCard = null;
+let currentTag = 'All';
+let currentSearch = '';
 
 // ===========================
 // Initialization
@@ -11,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeTabs();
     loadProjects();
     initializeCardInteractions();
+    initializeSearch();
 });
 
 // ===========================
@@ -64,6 +67,7 @@ async function loadProjects() {
         
         const projects = await response.json();
         allProjects = projects;
+        initializeTagFilters();
         renderProjects(projects);
         
     } catch (error) {
@@ -82,25 +86,8 @@ function showError(container) {
 }
 
 // ===========================
-// Project Rendering
+// Project Card HTML Generation
 // ===========================
-function renderProjects(projects) {
-    const gridContainer = document.getElementById('projects-grid');
-    
-    if (projects.length === 0) {
-        gridContainer.innerHTML = `
-            <div class="empty-state">
-                <p class="empty-state-message">No projects found.</p>
-            </div>
-        `;
-        return;
-    }
-    
-    // Build all cards HTML
-    const cardsHTML = projects.map(project => createCardHTML(project)).join('');
-    gridContainer.innerHTML = cardsHTML;
-}
-
 function createCardHTML(project) {
     const screenshotPath = project.screenshot 
         ? `screenshots/${project.screenshot}` 
@@ -252,4 +239,143 @@ function debounce(func, wait) {
         clearTimeout(timeout);
         timeout = setTimeout(later, wait);
     };
+}
+
+// ===========================
+// Tag Filters
+// ===========================
+function initializeTagFilters() {
+    const tagFiltersContainer = document.getElementById('tag-filters');
+    
+    // Extract unique tags from all projects
+    const uniqueTags = new Set();
+    allProjects.forEach(project => {
+        project.tags.forEach(tag => uniqueTags.add(tag));
+    });
+    
+    // Define tag order (manual ordering as specified)
+    const tagOrder = [
+        'game', 'webapp', 'tool', 'chrome-extension', 'desktop-app', 'content-generator',
+        'html-css-js', 'python', 'django', 'drf', 'tkinter', 'chrome-api',
+        'static-site', 'api-backed', 'full-stack',
+        'prototype', 'production', 'playground'
+    ];
+    
+    // Sort tags by predefined order
+    const sortedTags = Array.from(uniqueTags).sort((a, b) => {
+        const indexA = tagOrder.indexOf(a);
+        const indexB = tagOrder.indexOf(b);
+        if (indexA === -1) return 1; // Unknown tags to end
+        if (indexB === -1) return -1;
+        return indexA - indexB;
+    });
+    
+    // Create chips: "All" first, then sorted tags
+    const allChips = ['All', ...sortedTags];
+    
+    tagFiltersContainer.innerHTML = allChips
+        .map(tag => `
+            <button 
+                class="tag-chip ${tag === 'All' ? 'active' : ''}" 
+                data-tag="${tag}"
+                aria-pressed="${tag === 'All' ? 'true' : 'false'}">
+                ${tag}
+            </button>
+        `)
+        .join('');
+    
+    // Add click listeners
+    tagFiltersContainer.addEventListener('click', (event) => {
+        const chip = event.target.closest('.tag-chip');
+        if (!chip) return;
+        
+        const tag = chip.dataset.tag;
+        handleTagFilter(tag);
+    });
+}
+
+function handleTagFilter(tag) {
+    currentTag = tag;
+    
+    // Update chip visual states
+    const allChips = document.querySelectorAll('.tag-chip');
+    allChips.forEach(chip => {
+        const isActive = chip.dataset.tag === tag;
+        chip.classList.toggle('active', isActive);
+        chip.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+    });
+    
+    // Apply filters and re-render
+    applyFilters();
+}
+
+// ===========================
+// Search
+// ===========================
+function initializeSearch() {
+    const searchInput = document.getElementById('search-bar');
+    
+    searchInput.addEventListener('input', debounce((event) => {
+        currentSearch = event.target.value.trim();
+        applyFilters();
+    }, 300));
+}
+
+// ===========================
+// Filter Logic
+// ===========================
+function applyFilters() {
+    let filtered = allProjects;
+    
+    // Apply tag filter
+    if (currentTag !== 'All') {
+        filtered = filtered.filter(project => 
+            project.tags.includes(currentTag)
+        );
+    }
+    
+    // Apply search filter
+    if (currentSearch !== '') {
+        const searchLower = currentSearch.toLowerCase();
+        filtered = filtered.filter(project => 
+            project.name.toLowerCase().includes(searchLower) ||
+            project.description.toLowerCase().includes(searchLower)
+        );
+    }
+    
+    renderProjects(filtered);
+}
+
+function clearAllFilters() {
+    // Reset state
+    currentTag = 'All';
+    currentSearch = '';
+    
+    // Reset UI
+    const searchInput = document.getElementById('search-bar');
+    searchInput.value = '';
+    
+    // Update tag chips
+    handleTagFilter('All');
+}
+
+// ===========================
+// Enhanced Rendering with Empty State
+// ===========================
+function renderProjects(projects) {
+    const gridContainer = document.getElementById('projects-grid');
+    
+    if (projects.length === 0) {
+        gridContainer.innerHTML = `
+            <div class="empty-state">
+                <p class="empty-state-message">No projects match your filters.</p>
+                <button class="empty-state-action" onclick="clearAllFilters()">Show all projects</button>
+            </div>
+        `;
+        return;
+    }
+    
+    // Build all cards HTML
+    const cardsHTML = projects.map(project => createCardHTML(project)).join('');
+    gridContainer.innerHTML = cardsHTML;
 }
