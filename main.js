@@ -27,6 +27,9 @@ function initializeTabs() {
             switchTab(tab);
         });
     });
+    
+    // Initialize tab indicator position
+    updateTabIndicator();
 }
 
 function switchTab(selectedTab) {
@@ -50,6 +53,22 @@ function switchTab(selectedTab) {
             panel.setAttribute('hidden', '');
         }
     });
+    
+    // Update tab indicator position
+    updateTabIndicator();
+}
+
+function updateTabIndicator() {
+    const selectedTab = document.querySelector('button[role="tab"][aria-selected="true"]');
+    const indicator = document.querySelector('.tab-indicator');
+    
+    if (selectedTab && indicator) {
+        const tabRect = selectedTab.getBoundingClientRect();
+        const navRect = selectedTab.parentElement.getBoundingClientRect();
+        
+        indicator.style.left = (tabRect.left - navRect.left) + 'px';
+        indicator.style.width = tabRect.width + 'px';
+    }
 }
 
 // ===========================
@@ -151,10 +170,10 @@ function initializeCardInteractions() {
         // Don't handle if clicking on a button/link (they have stopPropagation)
         if (event.target.closest('.project-card-button')) return;
         
-        // Check if device supports hover (desktop)
-        const hasHover = window.matchMedia('(hover: hover)').matches;
+        // Check if device is touch-based (mobile/tablet)
+        const isTouchDevice = window.matchMedia('(pointer: coarse)').matches;
         
-        if (!hasHover) {
+        if (isTouchDevice) {
             // Mobile: toggle overlay
             if (card.classList.contains('card--active')) {
                 // Second tap: navigate to site
@@ -169,6 +188,11 @@ function initializeCardInteractions() {
                 card.classList.add('card--active');
                 activeCard = card;
                 addDismissListeners();
+                
+                // Scroll card into view to ensure overlay is visible
+                setTimeout(() => {
+                    card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
             }
         } else {
             // Desktop: navigate immediately

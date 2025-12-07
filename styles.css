@@ -101,6 +101,7 @@ nav[role="tablist"] {
     display: flex;
     justify-content: center;
     gap: var(--spacing-sm);
+    position: relative;
 }
 
 button[role="tab"] {
@@ -130,6 +131,15 @@ button[role="tab"]:focus {
 button[role="tab"][aria-selected="true"] {
     color: var(--color-primary);
     border-bottom-color: var(--color-primary);
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: left var(--transition-slow), width var(--transition-slow);
+    pointer-events: none;
 }
 
 /* ===========================
@@ -274,6 +284,11 @@ hr {
     margin-top: var(--spacing-xl);
 }
 
+/* Prevent single card from being too wide */
+.card-grid > .project-card:only-child {
+    max-width: 500px;
+}
+
 /* Project Cards */
 .project-card {
     background-color: var(--color-surface);
@@ -327,6 +342,12 @@ hr {
     font-size: var(--font-size-lg);
     font-weight: 600;
     color: var(--color-text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.project-card-date {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
     margin-bottom: var(--spacing-sm);
 }
 
@@ -334,7 +355,7 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: var(--spacing-xs);
-    margin-bottom: var(--spacing-sm);
+    margin-top: auto;
 }
 
 .project-card-tag {
@@ -344,12 +365,6 @@ hr {
     border-radius: var(--border-radius);
     font-size: var(--font-size-sm);
     font-weight: 500;
-}
-
-.project-card-date {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-muted);
-    margin-top: auto;
 }
 
 /* Card Overlay */
