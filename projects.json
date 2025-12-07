@@ -25,8 +25,9 @@
     "slug": "soccer.mjt.pub",
     "description": "A simple 2D soccer positioning game where players select a role, position themselves on the field, and receive a score based on their positioning. Built by someone who is a relative novice at soccer.",
     "siteUrl": "https://soccer.mjt.pub",
-    "githubUrl": "https://github.com/michaeljthacker/soccer",
-    "established": "Unknown",
+    "githubUrl": "https://github.com/michaeljthacker/soccer-position-game",
+    "screenshot": "soccer-positioning.png",
+    "established": "October 2024",
     "tags": ["game", "static-site", "html-css-js", "playground"]
   },
   {
