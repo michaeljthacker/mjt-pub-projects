@@ -87,6 +87,7 @@
     "slug": "thelastpupper.com",
     "description": "A simple site hosting a 'Last Pupper' image (dogs at the last supper). Not my artwork, just a domain I couldn't resist buying. Pastor approved.",
     "siteUrl": "http://thelastpupper.com",
+    "githubUrl": "https://github.com/michaeljthacker/TheLastPupper",
     "screenshot": "the-last-pupper.png",
     "established": "April 2020",
     "tags": ["webapp", "static-site", "playground"]
