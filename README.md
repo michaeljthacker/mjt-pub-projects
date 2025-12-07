@@ -301,6 +301,7 @@ Use these (or a subset) for consistency:
 * `drf`
 * `tkinter`
 * `chrome-api`
+* `react`
 
 **By deployment / architecture:**
 
