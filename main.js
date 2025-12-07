@@ -314,11 +314,16 @@ function handleTagFilter(tag) {
 // ===========================
 function initializeSearch() {
     const searchInput = document.getElementById('search-bar');
+    const clearButton = document.getElementById('clear-filters-btn');
     
     searchInput.addEventListener('input', debounce((event) => {
         currentSearch = event.target.value.trim();
         applyFilters();
     }, 300));
+    
+    clearButton.addEventListener('click', () => {
+        clearAllFilters();
+    });
 }
 
 // ===========================
