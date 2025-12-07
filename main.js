@@ -27,9 +27,6 @@ function initializeTabs() {
             switchTab(tab);
         });
     });
-    
-    // Initialize tab indicator position
-    updateTabIndicator();
 }
 
 function switchTab(selectedTab) {
@@ -53,22 +50,6 @@ function switchTab(selectedTab) {
             panel.setAttribute('hidden', '');
         }
     });
-    
-    // Update tab indicator position
-    updateTabIndicator();
-}
-
-function updateTabIndicator() {
-    const selectedTab = document.querySelector('button[role="tab"][aria-selected="true"]');
-    const indicator = document.querySelector('.tab-indicator');
-    
-    if (selectedTab && indicator) {
-        const tabRect = selectedTab.getBoundingClientRect();
-        const navRect = selectedTab.parentElement.getBoundingClientRect();
-        
-        indicator.style.left = (tabRect.left - navRect.left) + 'px';
-        indicator.style.width = tabRect.width + 'px';
-    }
 }
 
 // ===========================

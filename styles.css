@@ -133,15 +133,6 @@ button[role="tab"][aria-selected="true"] {
     border-bottom-color: var(--color-primary);
 }
 
-.tab-indicator {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: var(--color-primary);
-    transition: left var(--transition-slow), width var(--transition-slow);
-    pointer-events: none;
-}
-
 /* ===========================
    Main Content
    =========================== */
