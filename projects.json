@@ -1,15 +1,5 @@
 [
   {
-    "id": "api-backend",
-    "name": "mjt.pub API Backend",
-    "slug": "api.mjt.pub",
-    "description": "A modular Django + DRF backend used by multiple personal projects. A shared tool-belt that can power many apps without data collisions, providing RESTful APIs for authentication, data storage, and business logic.",
-    "siteUrl": "http://api.mjt.pub/docs",
-    "screenshot": "api-backend.png",
-    "established": "May 2025",
-    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
-  },
-  {
     "id": "a-thousand-questions",
     "name": "A Thousand Questions",
     "slug": "athousandquestions.com",
@@ -20,14 +10,35 @@
     "tags": ["webapp", "content-generator", "html-css-js", "static-site", "production", "react"]
   },
   {
-    "id": "homecare",
-    "name": "Home Care Tracker",
-    "slug": "homecare.mjt.pub",
-    "description": "A focused, lightweight webapp for generating and tracking a personalized home maintenance schedule. Helps homeowners stay on top of routine tasks and preventive maintenance.",
-    "siteUrl": "http://homecare.mjt.pub",
-    "screenshot": "homecare.png",
-    "established": "August 2025",
-    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
+    "id": "chrome-bible-speak",
+    "name": "Bible Speak Chrome Extension",
+    "slug": "chrome-bible-speak",
+    "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
+    "siteUrl": "http://biblenames.mjt.pub",
+    "githubUrl": "https://github.com/michaeljthacker/chrome-bible-speak",
+    "screenshot": "chrome-bible-speak.png",
+    "established": "January 2025",
+    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
+  },
+  {
+    "id": "api-backend",
+    "name": "mjt.pub API Backend",
+    "slug": "api.mjt.pub",
+    "description": "A modular Django + DRF backend used by multiple personal projects. A shared tool-belt that can power many apps without data collisions, providing RESTful APIs for authentication, data storage, and business logic.",
+    "siteUrl": "http://api.mjt.pub/docs",
+    "screenshot": "api-backend.png",
+    "established": "May 2025",
+    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
+  },
+  {
+    "id": "garden-tycoon",
+    "name": "Theo's Urban Garden",
+    "slug": "garden.mjt.pub",
+    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
+    "siteUrl": "http://garden.mjt.pub",
+    "screenshot": "garden-tycoon.png",
+    "established": "July 2025",
+    "tags": ["game", "html-css-js", "static-site", "prototype"]
   },
   {
     "id": "colors",
@@ -41,14 +52,14 @@
     "tags": ["webapp", "static-site", "html-css-js", "playground"]
   },
   {
-    "id": "garden-tycoon",
-    "name": "Theo's Urban Garden",
-    "slug": "garden.mjt.pub",
-    "description": "A cozy, browser-based, 2D farming tycoon game with 8-bit pixel art, grid-based gameplay, and idle mechanics. Not mobile-friendly. Play as Theo, a gardener growing and selling crops to grocery stores—starting small with carrots and working up to rare crops and larger farms.",
-    "siteUrl": "http://garden.mjt.pub",
-    "screenshot": "garden-tycoon.png",
-    "established": "July 2025",
-    "tags": ["game", "html-css-js", "static-site", "prototype"]
+    "id": "homecare",
+    "name": "Home Care Tracker",
+    "slug": "homecare.mjt.pub",
+    "description": "A focused, lightweight webapp for generating and tracking a personalized home maintenance schedule. Helps homeowners stay on top of routine tasks and preventive maintenance.",
+    "siteUrl": "http://homecare.mjt.pub",
+    "screenshot": "homecare.png",
+    "established": "August 2025",
+    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
   },
   {
     "id": "storytime",
@@ -72,16 +83,6 @@
     "tags": ["game", "html-css-js", "static-site", "prototype"]
   },
   {
-    "id": "notable-joy",
-    "name": "Notable Joy",
-    "slug": "NotableJoy.com",
-    "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
-    "siteUrl": "http://notablejoy.com",
-    "screenshot": "notable-joy.png",
-    "established": "2020",
-    "tags": ["playground"]
-  },
-  {
     "id": "the-last-pupper",
     "name": "The Last Pupper",
     "slug": "thelastpupper.com",
@@ -91,6 +92,16 @@
     "screenshot": "the-last-pupper.png",
     "established": "April 2020",
     "tags": ["webapp", "static-site", "playground"]
+  },
+  {
+    "id": "notable-joy",
+    "name": "Notable Joy",
+    "slug": "NotableJoy.com",
+    "description": "A site for a prototyped idea: fun, uplifting notes printed on business cards, meant to be handed to others as a touch of joy in their day. A simple concept for spreading positivity.",
+    "siteUrl": "http://notablejoy.com",
+    "screenshot": "notable-joy.png",
+    "established": "2020",
+    "tags": ["playground"]
   },
   {
     "id": "playful-button",
@@ -113,17 +124,6 @@
     "screenshot": "snake.png",
     "established": "March 2020",
     "tags": ["game", "html-css-js", "static-site", "playground"]
-  },
-  {
-    "id": "chrome-bible-speak",
-    "name": "Bible Speak Chrome Extension",
-    "slug": "chrome-bible-speak",
-    "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
-    "siteUrl": "https://github.com/michaeljthacker/chrome-bible-speak",
-    "githubUrl": "https://github.com/michaeljthacker/chrome-bible-speak",
-    "screenshot": "chrome-bible-speak.png",
-    "established": "January 2025",
-    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
   },
   {
     "id": "pdf-merger",
