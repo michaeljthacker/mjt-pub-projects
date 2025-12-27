@@ -44,7 +44,7 @@
     "id": "cooked-yet",
     "name": "Cooked Yet?",
     "slug": "cooked.mjt.pub",
-    "description": "A tiny, browser-only cooking tool that predicts when meat will reach a target temperature based on a few thermometer readings. Fits a simple temperature curve and estimates pull time, with optional carryover cooking.",
+    "description": "A simple, in-browser cooking tool that predicts when meat will reach a target temperature based on a few thermometer readings. Fits a simple temperature curve and estimates pull time, with optional carryover cooking.",
     "siteUrl": "http://cooked.mjt.pub",
     "githubUrl": "https://www.github.com/michaeljthacker/cooked-yet",
     "screenshot": "cooked-yet.png",
