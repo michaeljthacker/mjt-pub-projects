@@ -141,7 +141,7 @@
     "name": "PDF Merger",
     "slug": "pdf-merger",
     "description": "A simple drag-and-click desktop application for merging PDF files, built with Python and Tkinter. Provides an easy-to-use GUI for combining multiple PDFs into a single document.",
-    "siteUrl": "https://github.com/michaeljthacker/pdf-merger-gui",
+    "siteUrl": "https://github.com/michaeljthacker/pdf-merger-gui/releases",
     "githubUrl": "https://github.com/michaeljthacker/pdf-merger-gui",
     "screenshot": "pdf-merger.png",
     "established": "April 2025",
