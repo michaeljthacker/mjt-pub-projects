@@ -94,6 +94,16 @@
     "tags": ["game", "html-css-js", "static-site", "prototype"]
   },
   {
+    "id": "dbc-podcast",
+    "name": "The Daily Bible and Catechism Podcast",
+    "slug": "dbc-podcast",
+    "description": "A personal initiative to record and publish readings of the entire Bible and the Catechism of the Catholic Church over the course of a year.",
+    "siteUrl": "https://dbc.mjt.pub/",
+    "screenshot": "dbc-podcast.png",
+    "established": "December 2025",
+    "tags": []
+  },
+  {
     "id": "the-last-pupper",
     "name": "The Last Pupper",
     "slug": "thelastpupper.com",
