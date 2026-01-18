@@ -11,7 +11,7 @@
   },
   {
     "id": "chrome-bible-speak",
-    "name": "Bible Speak Chrome Extension",
+    "name": "Bible Name Aid Chrome Extension",
     "slug": "chrome-bible-speak",
     "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
     "siteUrl": "http://biblenames.mjt.pub",
