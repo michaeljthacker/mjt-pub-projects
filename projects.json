@@ -97,7 +97,7 @@
     },
     "screenshot": "mjt-projects.png",
     "established": "December 2025",
-    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
+    "tags": ["html-css-js", "prototype", "static-site"]
   },
   {
     "id": "homecare",
