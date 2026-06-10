@@ -14,7 +14,25 @@ document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
     initializeCardInteractions();
     initializeSearch();
+    initializeFilterToggle();
 });
+
+function initializeFilterToggle() {
+    const toggle = document.getElementById('filter-toggle');
+    const panel = document.getElementById('filter-panel');
+    if (!toggle || !panel) return;
+
+    toggle.addEventListener('click', () => {
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        const next = !expanded;
+        toggle.setAttribute('aria-expanded', next);
+        if (next) {
+            panel.removeAttribute('hidden');
+        } else {
+            panel.setAttribute('hidden', '');
+        }
+    });
+}
 
 // ===========================
 // Tab Navigation

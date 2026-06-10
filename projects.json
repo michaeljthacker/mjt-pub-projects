@@ -87,6 +87,19 @@
     "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
   },
   {
+    "id": "mjt-projects",
+    "name": "projects.mjt.pub",
+    "slug": "projects.mjt.pub",
+    "description": "This portfolio! If you like it, fork for your own portfolio. Just change the projects and deploy from GitHub Pages.",
+    "buttons": {
+      "GitHub": "https://github.com/michaeljthacker/mjt-pub-projects",
+      "Reload": "http://projects.mjt.pub"
+    },
+    "screenshot": "mjt-projects.png",
+    "established": "December 2025",
+    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
+  },
+  {
     "id": "homecare",
     "name": "Home Care Tracker",
     "slug": "homecare.mjt.pub",
