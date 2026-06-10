@@ -51,7 +51,7 @@
     "id": "storytime",
     "name": "Monthly Bedtime Serial",
     "slug": "storytime.mjt.pub",
-    "description": "A fully automated, month-long bedtime story generator and publisher. Each day, a new ~12-minute chapter is generated using the OpenAI API, posted to a static site hosted via GitHub Pages, and published as a podcast with Kokoro TTS with brand-new concepts, characters, and plots every 30 days.",
+    "description": "Fully automated bedtime stories. A ~12-minute chapter is written to BedtimeSerial.com daily and published as a podcast with Kokoro TTS. New concepts, characters, and plots every 30 days.",
     "buttons": {
       "View Site": "http://bedtimeserial.com",
       "Spotify": "https://open.spotify.com/show/033nQqCvavyOJzv5zQZG4s"
@@ -79,7 +79,7 @@
     "slug": "chrome-bible-speak",
     "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
     "buttons": {
-      "Chrome Store": "http://biblenames.mjt.pub",
+      "Download": "http://biblenames.mjt.pub",
       "GitHub": "https://github.com/michaeljthacker/chrome-bible-speak"
     },
     "screenshot": "chrome-bible-speak.png",
@@ -92,8 +92,7 @@
     "slug": "projects.mjt.pub",
     "description": "This portfolio! If you like it, fork for your own portfolio. Just change the projects and deploy from GitHub Pages.",
     "buttons": {
-      "GitHub": "https://github.com/michaeljthacker/mjt-pub-projects",
-      "Reload": "http://projects.mjt.pub"
+      "GitHub": "https://github.com/michaeljthacker/mjt-pub-projects"
     },
     "screenshot": "mjt-projects.png",
     "established": "December 2025",
