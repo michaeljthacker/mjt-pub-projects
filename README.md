@@ -3,7 +3,7 @@
 A simple, lightweight gallery showcasing sites and apps built by **Mike Thacker**. Projects range from early experiments and random prototypes to simple production webapps and full-stack applications.
 
 * **Default view:** Project cards with screenshots, title, tags, and an “Est.” date.
-* **Hover / tap:** Show description and quick links (site, GitHub).
+* **Hover / tap:** Show description and a per-project set of action buttons (e.g., "View Site", "GitHub", "Spotify", "Chrome Store", "Try a Puzzle", "Download").
 * **Tabs:**
 
   * **Projects** – all projects, with tag filters and search.
@@ -200,15 +200,17 @@ Each project is a JSON object. Example:
 ```json
 [
   {
-    "id": "a-thousand-questions",
-    "name": "A Thousand Questions",
-    "slug": "athousandquestions.com",
-    "description": "A simple and interactive web application designed to provide icebreaker-style questions for fun conversations, team-building exercises, or social gatherings.",
-    "siteUrl": "https://athousandquestions.com",
-    "screenshot": "a-thousand-questions.png",
-    "githubUrl": "https://github.com/michaeljthacker/athousandquestions",
-    "established": "January 2024",
-    "tags": ["webapp", "static-site", "questions"]
+    "id": "soccer-positioning",
+    "name": "Soccer Positioning Game",
+    "slug": "soccer.mjt.pub",
+    "description": "A simple 2D soccer positioning game...",
+    "buttons": {
+      "View Site": "http://soccer.mjt.pub",
+      "GitHub": "https://github.com/michaeljthacker/soccer-position-game"
+    },
+    "screenshot": "soccer-positioning.png",
+    "established": "October 2024",
+    "tags": ["game", "html-css-js", "static-site", "prototype"]
   }
 ]
 ```
@@ -233,20 +235,18 @@ Each project is a JSON object. Example:
 
   * Shown in the overlay when hovering or tapping the card.
 
-* **`siteUrl`**
+* **`buttons`**
 
-  * URL the card navigates to when you click the card background.
+  * An ordered object mapping button label → URL. At least one entry is required.
+  * Each entry renders as a button in the card overlay, in the order given.
+  * The **first entry** is the project's primary URL — used when the user clicks the card background (desktop) or second-taps the card (mobile).
+  * The first button uses the primary style; subsequent buttons use a secondary style.
+  * Labels are free-form text — use whatever fits the project (e.g., `"View Site"`, `"GitHub"`, `"Chrome Store"`, `"Spotify"`, `"View Docs"`, `"Download"`, `"Try a Puzzle"`, `"Instagram"`).
 
 * **`screenshot`** (optional)
 
   * Filename under `screenshots/`.
   * If omitted, code assumes `<id>.png`; if that’s missing too, falls back to `default-project.png`.
-
-* **`githubUrl`** (optional)
-
-  * For public projects, use the actual repo URL.
-  * For private or miscellaneous things, you can just use `https://github.com/michaeljthacker`.
-  * If omitted, the GitHub button is hidden for that card.
 
 * **`established`**
 
@@ -339,11 +339,8 @@ Example tag sets:
 * Cards:
 
   * Default state: screenshot + project name + tags + “Est. Month Year”.
-  * Hover / tap: show overlay with description and buttons:
-
-    * “View Site”
-    * “GitHub” (if `githubUrl` present)
-  * Clicking the **card background** navigates to `siteUrl`.
+  * Hover / tap: show overlay with description and the project's button set, rendered in the order defined in `buttons`.
+  * Clicking the **card background** (or second-tapping on mobile) navigates to the first URL in the `buttons` object.
 
 **About tab**
 
@@ -369,13 +366,17 @@ Example tag sets:
      "name": "My New Project",
      "slug": "mynewproject.example.com",
      "description": "Short description of what this project does and why it exists.",
-     "siteUrl": "https://mynewproject.example.com",
+     "buttons": {
+       "View Site": "https://mynewproject.example.com",
+       "GitHub": "https://github.com/michaeljthacker/my-new-project"
+     },
      "screenshot": "my-new-project.png",
-     "githubUrl": "https://github.com/michaeljthacker",
      "established": "March 2025",
      "tags": ["webapp", "prototype"]
    }
    ```
+
+   The first button is the card's primary destination (used for whole-card click). Add as many additional buttons as the project needs, with any label.
 
 3. **Commit & deploy**
 
