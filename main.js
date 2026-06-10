@@ -88,6 +88,10 @@ function showError(container) {
 // ===========================
 // Project Card HTML Generation
 // ===========================
+function getPrimaryUrl(project) {
+    return Object.values(project.buttons)[0];
+}
+
 function createCardHTML(project) {
     const screenshotPath = project.screenshot 
         ? `screenshots/${project.screenshot}` 
@@ -97,14 +101,17 @@ function createCardHTML(project) {
         .map(tag => `<span class="project-card-tag">${tag}</span>`)
         .join('');
     
-    const githubButtonHTML = project.githubUrl
-        ? `<a href="${project.githubUrl}" 
-              class="project-card-button secondary" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              onclick="event.stopPropagation()">GitHub</a>`
-        : '';
-    
+    const buttonsHTML = Object.entries(project.buttons)
+        .map(([label, url], index) => {
+            const buttonClass = index === 0 ? 'project-card-button' : 'project-card-button secondary';
+            return `<a href="${url}"
+                       class="${buttonClass}"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       onclick="event.stopPropagation()">${label}</a>`;
+        })
+        .join('');
+
     return `
         <article class="project-card" data-project-id="${project.id}">
             <div class="project-card-screenshot-container">
@@ -124,12 +131,7 @@ function createCardHTML(project) {
             <div class="project-card-overlay">
                 <p class="project-card-description">${project.description}</p>
                 <div class="project-card-buttons">
-                    <a href="${project.siteUrl}" 
-                       class="project-card-button" 
-                       target="_blank" 
-                       rel="noopener noreferrer"
-                       onclick="event.stopPropagation()">View Site</a>
-                    ${githubButtonHTML}
+                    ${buttonsHTML}
                 </div>
             </div>
         </article>
@@ -161,7 +163,7 @@ function initializeCardInteractions() {
                 const projectId = card.dataset.projectId;
                 const project = allProjects.find(p => p.id === projectId);
                 if (project) {
-                    window.open(project.siteUrl, '_blank', 'noopener,noreferrer');
+                    window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
                 }
             } else {
                 // First tap: show overlay
@@ -180,7 +182,7 @@ function initializeCardInteractions() {
             const projectId = card.dataset.projectId;
             const project = allProjects.find(p => p.id === projectId);
             if (project) {
-                window.open(project.siteUrl, '_blank', 'noopener,noreferrer');
+                window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
             }
         }
     });
