@@ -190,6 +190,44 @@ hr {
 /* Filter Controls */
 .filter-controls {
     margin-bottom: var(--spacing-xl);
+    text-align: center;
+}
+
+.filter-toggle {
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    font-family: var(--font-family);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    transition: color var(--transition-base);
+}
+
+.filter-toggle:hover {
+    color: var(--color-primary);
+}
+
+.filter-toggle:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: var(--border-radius);
+}
+
+.filter-toggle-icon {
+    transition: transform var(--transition-base);
+    display: inline-block;
+}
+
+.filter-toggle[aria-expanded="true"] .filter-toggle-icon {
+    transform: rotate(180deg);
+}
+
+.filter-panel {
+    margin-top: var(--spacing-md);
 }
 
 .tag-filters {
