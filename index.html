@@ -107,6 +107,14 @@
         <p>An<a href="https://mjt.pub" target="_blank" rel="noopener noreferrer">mjt.pub</a>project | Questions?<a href="mailto:hi@mjt.pub">hi@mjt.pub</a></p>
     </footer>
 
+    <script type="module">
+        import { init, pageView, track } from 'https://analytics.mjt.pub/analytics.js';
+        init({
+            site: 'projects.mjt.pub',
+            writeKey: 'htb2LQmdYzOtUofWGVt7WjXGLiNf9yfgHMPEDYqPXiE'
+        });
+        window.mjtAnalytics = { pageView, track };
+    </script>
     <script src="main.js"></script>
 </body>
 </html>
