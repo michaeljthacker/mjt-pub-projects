@@ -15,7 +15,22 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeCardInteractions();
     initializeSearch();
     initializeFilterToggle();
+    trackPageView('/projects');
 });
+
+// ===========================
+// Analytics helpers
+// ===========================
+function trackPageView(path) {
+    window.mjtAnalytics?.pageView?.({ path });
+}
+
+function trackProjectClick(project, buttonLabel, via) {
+    if (!project) return;
+    const state = { button: buttonLabel };
+    if (via) state.via = via;
+    window.mjtAnalytics?.track?.(project.name, { state });
+}
 
 function initializeFilterToggle() {
     const toggle = document.getElementById('filter-toggle');
@@ -58,16 +73,16 @@ function switchTab(selectedTab) {
     });
     
     // Update panels
+    const panelId = selectedTab.getAttribute('aria-controls');
     allPanels.forEach(panel => {
-        const tabId = selectedTab.getAttribute('id');
-        const panelId = selectedTab.getAttribute('aria-controls');
-        
         if (panel.getAttribute('id') === panelId) {
             panel.removeAttribute('hidden');
         } else {
             panel.setAttribute('hidden', '');
         }
     });
+
+    trackPageView(panelId === 'about-panel' ? '/about' : '/projects');
 }
 
 // ===========================
@@ -161,13 +176,23 @@ function createCardHTML(project) {
 // ===========================
 function initializeCardInteractions() {
     const gridContainer = document.getElementById('projects-grid');
-    
+
+    // Capture-phase listener so we see button clicks before their inline
+    // stopPropagation() runs (also fires before navigation begins).
+    gridContainer.addEventListener('click', (event) => {
+        const button = event.target.closest('.project-card-button');
+        if (!button) return;
+        const card = button.closest('.project-card');
+        const project = card && allProjects.find(p => p.id === card.dataset.projectId);
+        trackProjectClick(project, button.textContent.trim());
+    }, true);
+
     // Card click handler
     gridContainer.addEventListener('click', (event) => {
         const card = event.target.closest('.project-card');
-        
+
         if (!card) return;
-        
+
         // Don't handle if clicking on a button/link (they have stopPropagation)
         if (event.target.closest('.project-card-button')) return;
         
@@ -181,6 +206,7 @@ function initializeCardInteractions() {
                 const projectId = card.dataset.projectId;
                 const project = allProjects.find(p => p.id === projectId);
                 if (project) {
+                    trackProjectClick(project, Object.keys(project.buttons)[0], 'card');
                     window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
                 }
             } else {
@@ -200,6 +226,7 @@ function initializeCardInteractions() {
             const projectId = card.dataset.projectId;
             const project = allProjects.find(p => p.id === projectId);
             if (project) {
+                trackProjectClick(project, Object.keys(project.buttons)[0], 'card');
                 window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
             }
         }
