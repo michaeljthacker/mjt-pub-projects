@@ -140,7 +140,7 @@ function createCardHTML(project) {
             return `<a href="${url}"
                        class="${buttonClass}"
                        target="_blank"
-                       rel="noopener noreferrer"
+                       rel="noopener"
                        onclick="event.stopPropagation()">${label}</a>`;
         })
         .join('');
@@ -207,7 +207,7 @@ function initializeCardInteractions() {
                 const project = allProjects.find(p => p.id === projectId);
                 if (project) {
                     trackProjectClick(project, Object.keys(project.buttons)[0], 'card');
-                    window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
+                    window.open(getPrimaryUrl(project), '_blank', 'noopener');
                 }
             } else {
                 // First tap: show overlay
@@ -227,7 +227,7 @@ function initializeCardInteractions() {
             const project = allProjects.find(p => p.id === projectId);
             if (project) {
                 trackProjectClick(project, Object.keys(project.buttons)[0], 'card');
-                window.open(getPrimaryUrl(project), '_blank', 'noopener,noreferrer');
+                window.open(getPrimaryUrl(project), '_blank', 'noopener');
             }
         }
     });
