@@ -5,7 +5,7 @@
     "slug": "athousandquestions.com",
     "description": "An interactive web application providing icebreaker-style questions for conversations, team-building, and social gatherings. Features category filtering, social sharing, and a clean, lightweight interface.",
     "buttons": {
-      "View Site": "https://athousandquestions.com"
+      "View Site": "https://www.athousandquestions.com/"
     },
     "screenshot": "a-thousand-questions.png",
     "established": "January 2024",
@@ -67,7 +67,7 @@
     "description": "A simple, in-browser cooking tool that predicts when meat will reach a target temperature based on a few thermometer readings. Fits a simple temperature curve and estimates pull time, with optional carryover cooking.",
     "buttons": {
       "View Site": "https://cooked.mjt.pub",
-      "GitHub": "https://www.github.com/michaeljthacker/cooked-yet"
+      "GitHub": "https://github.com/michaeljthacker/cooked-yet"
     },
     "screenshot": "cooked-yet.png",
     "established": "December 2025",
@@ -129,7 +129,7 @@
     "description": "A responsive generative art web application that creates color-themed designs using extracted color palettes. Explore beautiful color combinations and generative patterns.",
     "buttons": {
       "View Site": "https://colors.mjt.pub",
-      "GitHub": "https://www.github.com/michaeljthacker/ColorWebApp"
+      "GitHub": "https://github.com/michaeljthacker/ColorWebApp"
     },
     "screenshot": "colors.png",
     "established": "October 2025",
@@ -205,7 +205,7 @@
     "slug": "PlayfulButton.com",
     "description": "A simple web-based game where users click a playful, moving button to increase their score. Includes difficulty levels, lives, and a playful UI. My first ever coding-assistant project experiment.",
     "buttons": {
-      "View Site": "https://playfulbutton.com",
+      "View Site": "https://www.playfulbutton.com",
       "GitHub": "https://github.com/michaeljthacker/playful-button"
     },
     "screenshot": "playful-button.png",
