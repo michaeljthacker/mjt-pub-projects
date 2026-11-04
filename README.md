@@ -210,7 +210,7 @@ Each project is a JSON object. Example:
     },
     "screenshot": "soccer-positioning.png",
     "established": "October 2024",
-    "tags": ["game", "html-css-js", "static-site", "prototype"]
+    "tags": ["game", "frontend", "static-site", "prototype"]
   }
 ]
 ```
@@ -289,27 +289,22 @@ Use these (or a subset) for consistency:
 * `game`
 * `webapp`
 * `tool`
-* `chrome-extension`
-* `desktop-app`
 * `content-generator`
 
 **By tech:**
 
-* `html-css-js`
+* `ai`
+* `frontend` (any browser-side code: plain HTML/CSS/JS, React, TypeScript, etc.)
 * `python`
 * `django`
 * `drf`
-* `tkinter`
-* `chrome-api`
-* `react`
 
 **By deployment / architecture:**
 
 * `static-site`
 * `api-backed`
-* `full-stack`
 
-**By maturity:**
+**By maturity (pick one):**
 
 * `prototype`
 * `production`
@@ -317,9 +312,9 @@ Use these (or a subset) for consistency:
 
 Example tag sets:
 
-* `["game", "html-css-js", "static-site"]`
+* `["game", "frontend", "static-site"]`
 * `["webapp", "api-backed", "production"]`
-* `["desktop-app", "python", "tool"]`
+* `["tool", "python", "prototype"]`
 
 ---
 

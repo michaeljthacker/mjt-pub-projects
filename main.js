@@ -307,9 +307,9 @@ function initializeTagFilters() {
     
     // Define tag order (manual ordering as specified)
     const tagOrder = [
-        'game', 'webapp', 'tool', 'analytics', 'chrome-extension', 'desktop-app',
-        'content-generator', 'html-css-js', 'python', 'django', 'drf', 'tkinter',
-        'chrome-api', 'react', 'static-site', 'api-backed', 'full-stack',
+        'game', 'webapp', 'tool',
+        'content-generator', 'ai', 'frontend', 'python', 'django', 'drf',
+        'static-site', 'api-backed',
         'prototype', 'production', 'playground'
     ];
     

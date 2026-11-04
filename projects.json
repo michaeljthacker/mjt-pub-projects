@@ -9,7 +9,7 @@
     },
     "screenshot": "a-thousand-questions.png",
     "established": "January 2024",
-    "tags": ["webapp", "content-generator", "html-css-js", "static-site", "production", "react"]
+    "tags": ["webapp", "frontend", "static-site", "production"]
   },
   {
     "id": "garden-tycoon",
@@ -21,7 +21,7 @@
     },
     "screenshot": "garden-tycoon.png",
     "established": "July 2025",
-    "tags": ["game", "html-css-js", "static-site", "prototype"]
+    "tags": ["game", "frontend", "static-site", "production"]
   },
   {
     "id": "api-backend",
@@ -33,7 +33,7 @@
     },
     "screenshot": "api-backend.png",
     "established": "May 2025",
-    "tags": ["tool", "django", "drf", "python", "full-stack", "api-backed", "production"]
+    "tags": ["tool", "python", "django", "drf", "production"]
   },
   {
     "id": "childrens-liturgy",
@@ -45,7 +45,7 @@
     },
     "screenshot": "childrens-liturgy.png",
     "established": "June 2026",
-    "tags": ["tool", "content-generator", "html-css-js", "static-site", "production", "python"]
+    "tags": ["content-generator", "ai", "python", "frontend", "static-site", "production"]
   },
   {
     "id": "try-something",
@@ -57,7 +57,7 @@
     },
     "screenshot": "try-something.png",
     "established": "October 2026",
-    "tags": ["game", "html-css-js", "static-site", "api-backed", "prototype"]
+    "tags": ["game", "ai", "frontend", "static-site", "api-backed", "prototype"]
   },
   {
     "id": "sam",
@@ -69,7 +69,7 @@
     },
     "screenshot": "sam.png",
     "established": "February 2026",
-    "tags": ["tool", "prototype", "python"]
+    "tags": ["tool", "ai", "prototype"]
   },
   {
     "id": "mjt-analytics",
@@ -81,7 +81,7 @@
     },
     "screenshot": "mjt-analytics.png",
     "established": "June 2026",
-    "tags": ["tool", "analytics", "python", "django", "production"]
+    "tags": ["tool", "frontend", "python", "django", "drf", "production"]
   },
   {
     "id": "mjt-projects",
@@ -93,7 +93,7 @@
     },
     "screenshot": "mjt-projects.png",
     "established": "December 2025",
-    "tags": ["html-css-js", "prototype", "static-site"]
+    "tags": ["frontend", "static-site", "production"]
   },
   {
     "id": "storytime",
@@ -106,7 +106,7 @@
     },
     "screenshot": "storytime.png",
     "established": "August 2025",
-    "tags": ["content-generator", "python", "static-site", "production"]
+    "tags": ["content-generator", "ai", "python", "static-site", "production"]
   },
   {
     "id": "chrome-bible-speak",
@@ -119,7 +119,7 @@
     },
     "screenshot": "chrome-bible-speak.png",
     "established": "January 2025",
-    "tags": ["chrome-extension", "python", "html-css-js", "chrome-api", "prototype", "tool"]
+    "tags": ["tool", "frontend", "python", "production"]
   },
   {
     "id": "catholic-discussion-guides",
@@ -131,7 +131,7 @@
     },
     "screenshot": "catholic-discussion-guides.png",
     "established": "October 2026",
-    "tags": ["tool", "content-generator", "webapp", "python", "django", "production"]
+    "tags": ["webapp", "content-generator", "ai", "python", "django", "drf", "api-backed", "production"]
   },
   {
     "id": "cooked-yet",
@@ -144,7 +144,7 @@
     },
     "screenshot": "cooked-yet.png",
     "established": "December 2025",
-    "tags": ["html-css-js", "static-site", "playground", "prototype", "tool", "webapp"]
+    "tags": ["tool", "webapp", "frontend", "static-site", "prototype"]
   },
   {
     "id": "homecare",
@@ -156,7 +156,7 @@
     },
     "screenshot": "homecare.png",
     "established": "August 2025",
-    "tags": ["webapp", "html-css-js", "api-backed", "production", "tool", "react", "full-stack"]
+    "tags": ["webapp", "tool", "frontend", "api-backed", "production"]
   },
   {
     "id": "colors",
@@ -169,7 +169,7 @@
     },
     "screenshot": "colors.png",
     "established": "October 2025",
-    "tags": ["webapp", "static-site", "html-css-js", "playground"]
+    "tags": ["webapp", "frontend", "static-site", "playground"]
   },
   {
     "id": "wordsearch",
@@ -182,7 +182,7 @@
     },
     "screenshot": "wordsearch.png",
     "established": "April 2026",
-    "tags": ["webapp", "html-css-js", "production", "tool", "static-site"]
+    "tags": ["webapp", "tool", "game", "frontend", "static-site", "production"]
   },
   {
     "id": "soccer-positioning",
@@ -195,7 +195,7 @@
     },
     "screenshot": "soccer-positioning.png",
     "established": "October 2024",
-    "tags": ["game", "html-css-js", "static-site", "prototype"]
+    "tags": ["game", "frontend", "static-site", "prototype"]
   },
   {
     "id": "the-last-pupper",
@@ -208,7 +208,7 @@
     },
     "screenshot": "the-last-pupper.png",
     "established": "April 2020",
-    "tags": ["webapp", "static-site", "playground"]
+    "tags": ["frontend", "static-site", "playground"]
   },
   {
     "id": "notable-joy",
@@ -233,7 +233,7 @@
     },
     "screenshot": "playful-button.png",
     "established": "December 2024",
-    "tags": ["game", "html-css-js", "static-site", "playground"]
+    "tags": ["game", "frontend", "static-site", "playground"]
   },
   {
     "id": "snake",
@@ -246,7 +246,7 @@
     },
     "screenshot": "snake.png",
     "established": "March 2020",
-    "tags": ["game", "html-css-js", "static-site", "playground"]
+    "tags": ["game", "frontend", "static-site", "playground"]
   },
   {
     "id": "dbc-podcast",
@@ -259,7 +259,7 @@
     },
     "screenshot": "dbc-podcast.png",
     "established": "December 2025",
-    "tags": []
+    "tags": ["playground"]
   },
   {
     "id": "pdf-merger",
@@ -272,6 +272,6 @@
     },
     "screenshot": "pdf-merger.png",
     "established": "April 2025",
-    "tags": ["desktop-app", "tool", "python", "tkinter", "prototype"]
+    "tags": ["tool", "python", "prototype"]
   }
 ]
