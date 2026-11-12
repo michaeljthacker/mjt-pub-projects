@@ -87,9 +87,10 @@
     "id": "mjt-projects",
     "name": "projects.mjt.pub",
     "slug": "projects.mjt.pub",
-    "description": "This portfolio! If you like it, fork for your own portfolio. Just change the projects and deploy from GitHub Pages.",
+    "description": "This portfolio! If you like it, use it as a template for your own portfolio. Just change the projects and deploy from GitHub Pages.",
     "buttons": {
-      "GitHub": "https://github.com/michaeljthacker/mjt-pub-projects"
+      "GitHub": "https://github.com/michaeljthacker/mjt-pub-projects",
+      "Theo's Version": "https://tjt.pub"
     },
     "screenshot": "mjt-projects.png",
     "established": "December 2025",
@@ -120,6 +121,18 @@
     "screenshot": "chrome-bible-speak.png",
     "established": "January 2025",
     "tags": ["tool", "frontend", "python", "production"]
+  },
+  {
+    "id": "chronicles-of-avalon",
+    "name": "Chronicles of Avalon",
+    "slug": "avalon.tjt.pub",
+    "description": "I built a backend to run my son's python-based text RPG. Now, a browser-based, text-driven fantasy RPG with turn-based combat, character classes, quests, and exploration. The backend runs his script directly with no edits and it's really impressive!",
+    "buttons": {
+      "View Site": "https://avalon.tjt.pub"
+    },
+    "screenshot": "avalon.png",
+    "established": "November 2026",
+    "tags": ["game", "webapp", "frontend", "python", "api-backed", "production"]
   },
   {
     "id": "catholic-discussion-guides",
