@@ -109,18 +109,18 @@
     "established": "August 2025",
     "tags": ["content-generator", "ai", "python", "static-site", "production"]
   },
-  {
-    "id": "chrome-bible-speak",
-    "name": "Bible Name Aid Chrome Extension",
-    "slug": "chrome-bible-speak",
-    "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
+    {
+    "id": "nfl-model",
+    "name": "NFL Playoff Predictor",
+    "slug": "nfl-predictor.mjt.pub",
+    "description": "A deliberately simple NFL playoff predictor using a Bayesian team-strength model, Monte Carlo season simulations, and real tiebreaker rules. Force the result of any remaining game and see the playoff picture update instantly.",
     "buttons": {
-      "Download": "https://biblenames.mjt.pub",
-      "GitHub": "https://github.com/michaeljthacker/chrome-bible-speak"
+      "View Site": "https://nfl-predictor.mjt.pub/",
+      "Methodology": "https://nfl-predictor.mjt.pub/how-it-works.html"
     },
-    "screenshot": "chrome-bible-speak.png",
-    "established": "January 2025",
-    "tags": ["tool", "frontend", "python", "production"]
+    "screenshot": "nfl-model.png",
+    "established": "November 2026",
+    "tags": ["webapp", "python", "frontend", "static-site", "prototype"]
   },
   {
     "id": "chronicles-of-avalon",
@@ -133,6 +133,19 @@
     "screenshot": "avalon.png",
     "established": "November 2026",
     "tags": ["game", "webapp", "frontend", "python", "api-backed", "production"]
+  },
+  {
+    "id": "chrome-bible-speak",
+    "name": "Bible Name Aid Chrome Extension",
+    "slug": "chrome-bible-speak",
+    "description": "A Chrome extension that scans webpages for BibleSpeak.org pronunciations and injects phonetic pronunciation guides directly into the page. Helps with biblical name pronunciation while reading online.",
+    "buttons": {
+      "Download": "https://biblenames.mjt.pub",
+      "GitHub": "https://github.com/michaeljthacker/chrome-bible-speak"
+    },
+    "screenshot": "chrome-bible-speak.png",
+    "established": "January 2025",
+    "tags": ["tool", "frontend", "python", "production"]
   },
   {
     "id": "catholic-discussion-guides",
