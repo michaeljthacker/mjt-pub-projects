@@ -51,7 +51,7 @@
     "id": "try-something",
     "name": "Try Something!",
     "slug": "trysomething.mjt.pub",
-    "description": "A browser-based fantasy adventure (concept demo) combining traditional turn-based gameplay with AI-powered free-form actions. Explore a dungeon with 1–3 heroes, battle enemies, and try just about anything. AI interprets your ideas, while a deterministic game engine handles the rules, dice, and consequences.",
+    "description": "A browser-based dungeon game and concept demo combining deterministic gameplay with AI-powered free-form actions. Try something - anything! AI interprets your ideas to a deterministic game engine that handles rules, dice, and consequences.",
     "buttons": {
       "View Site": "https://trysomething.mjt.pub"
     },
